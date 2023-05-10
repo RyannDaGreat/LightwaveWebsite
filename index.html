@@ -3,18 +3,22 @@
 <head>
     <title>The LightWave</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: 'Century Gothic', 'Open Sans', sans-serif;
             color: white;
             text-align: center;
             background-color: #21D4FD;
             background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+			/* background-image: linear-gradient(to top, #181636 0%, #09203f 33%, #162036 66%, rgba(40, 42, 54, 1) 100%); */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
         }
         .video-container {
             position: relative;
@@ -23,7 +27,7 @@
             padding-top: 56.25%;
             margin-bottom: 1rem;
         }
-        .video-container iframe {
+        .video-container  {
             position: absolute;
             top: 0;
             left: 0;
@@ -48,13 +52,17 @@
 <body>
     <h1>The LightWave</h1>
     <h2>Ryan Burgert 2023</h2>
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UBF2faOF9D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    <!-- <div class="video-container"> -->
+        <iframe 
+		 width="840" height="472.5"
+		 src="https://www.youtube.com/embed/UBF2faOF9D0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- </div> -->
     <p>I built my own synth instrument from scratch! I call it "The LightWave", because it has lights...and makes sound waves!</p>
-    <div class="video-container">
-        <iframe src="https://player.vimeo.com/video/262693133?h=bd5ae620fe" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <!-- <div class="video-container"> -->
+        <iframe 
+		 width="840" height="472.5"
+		  src="https://player.vimeo.com/video/262693133?h=bd5ae620fe" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!-- </div> -->
     <p>The above video actually has the second version. I made my first LightWave about 5 years ago, and in this video I show how it was made and how it works, some challenges, and more!</p>
 </body>
 </html>
